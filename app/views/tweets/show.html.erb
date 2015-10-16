@@ -1,0 +1,5 @@
+	before_validation
+
+	if self.monstruo.tweets.count == 0
+		redirect_to monstruos_path, notice: 'Mensaje a mostrar'
+	end

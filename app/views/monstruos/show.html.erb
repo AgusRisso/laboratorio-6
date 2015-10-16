@@ -1,0 +1,11 @@
+<h1 style="color: blue"> <%= @monstruo.nombre %> </h1>
+<table>
+	<tr>
+		<th> TWEETS </th>
+	</tr>
+		<% @monstruo.tweets.all.each do |tweet| %>
+			<tr>
+				<td> <%= tweet.estado %> </td>
+			</tr>
+		<% end %>
+</table>
